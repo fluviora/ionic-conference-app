@@ -3,20 +3,20 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>Support</ion-title>
+    <ion-title>Suporte Líbano Seguros</ion-title>
   </ion-toolbar>
 
 </ion-header>
 
 <ion-content>
   <div class="support-logo">
-    <img src="assets/img/appicon.svg" alt="Ionic Logo">
+    <img src="assets/img/mapaLibano.png" alt="Ionic Logo">
   </div>
 
   <form #submitForm="ngForm" novalidate (ngSubmit)="submit(submitForm)">
     <ion-list lines="none">
       <ion-item>
-        <ion-label position="stacked" color="primary">Enter your support message below</ion-label>
+        <ion-label position="stacked" color="primary">Digite sua reclamação ou sugestão abaixo</ion-label>
         <ion-textarea [(ngModel)]="supportMessage" name="supportQuestion" #supportQuestion="ngModel" rows="6" required></ion-textarea>
       </ion-item>
     </ion-list>
@@ -28,7 +28,7 @@
     </ion-text>
 
     <div class="ion-padding">
-      <ion-button expand="block" type="submit">Submit</ion-button>
+      <ion-button expand="block" type="submit">Enviar</ion-button>
     </div>
   </form>
 </ion-content>

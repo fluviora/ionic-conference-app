@@ -4,13 +4,13 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
 
-    <ion-title>Login</ion-title>
+    <ion-title>Faça seu Login</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <div class="login-logo">
-    <img src="assets/img/appicon.svg" alt="Ionic logo">
+    <img src="assets/img/bandeira_do_libano.png" alt="Ionic logo">
   </div>
 
   <form #loginForm="ngForm" novalidate>
@@ -46,9 +46,16 @@
         <ion-button (click)="onLogin(loginForm)" type="submit" expand="block">Login</ion-button>
       </ion-col>
       <ion-col>
-        <ion-button (click)="onSignup()" color="light" expand="block">Signup</ion-button>
+        <ion-button (click)="onSignup()" color="light" expand="block">Registar-se</ion-button>
       </ion-col>
     </ion-row>
+    <ion-col>
+      <ion-button (click)="onSignup()" background="red" expand="block"><ion-img id='google_icon' src="assets/img/google_icon.png"></ion-img>Login com sua conta Google</ion-button>
+      
+    </ion-col>
+    
+    
+    
   </form>
 
 </ion-content>

@@ -1,7 +1,7 @@
 <ion-header no-border>
   <ion-toolbar>
     <ion-buttons slot="end">
-      <ion-button color='primary' (click)="startApp()" [hidden]="!showSkip">Skip</ion-button>
+      <ion-button color='primary' (click)="startApp()" [hidden]="!showSkip">Pular</ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
@@ -9,37 +9,33 @@
 <ion-content fullscreen="true">
   <swiper (swiper)="setSwiperInstance($event)" (slideChangeTransitionStart)="onSlideChangeStart()">
     <ng-template swiperSlide>
-      <img src="assets/img/ica-slidebox-img-1.png" class="slide-image" />
+      <img src="assets/img/bandeira_do_libano.png" class="slide-image" />
       <h2 class="slide-title">
-        Welcome to
-        <b>ICA</b>
+        Bem vindo à
+        <b>Líbano Seguros</b>
       </h2>
       <p>
-        The
-        <b>ionic conference app</b> is a practical preview of the ionic framework in action, and a demonstration of proper code
-        use.
+        A melhor corretora de seguros do Brasil
       </p>
     </ng-template>
 
     <ng-template swiperSlide>
-      <img src="assets/img/ica-slidebox-img-2.png" class="slide-image" />
-      <h2 class="slide-title">What is Ionic?</h2>
+      <img src="assets/img/tipodeseguro.png" class="slide-image" />
+      <h2 class="slide-title">O que faz a Líbano Seguros?</h2>
       <p>
-        <b>Ionic Framework</b> is an open source SDK that enables developers to build high quality mobile apps with web technologies
-        like HTML, CSS, and JavaScript.</p>
+        Comercializamos todos os tipo de <b>seguros</b></p>
     </ng-template>
 
     <ng-template swiperSlide>
-      <img src="assets/img/ica-slidebox-img-3.png" class="slide-image" />
-      <h2 class="slide-title">What is Ionic Appflow?</h2>
+      <img src="assets/img/tipodeseguro2.png" class="slide-image" />
+      <h2 class="slide-title">Proteja sua família</h2>
       <p>
-        <b>Ionic Appflow</b> is a powerful set of services and features built on top of Ionic Framework that brings a totally new
-        level of app development agility to mobile dev teams.</p>
+        Já parou para pensar como sua família sobreviveria na sua falta? Nós já pensamos por você!</p>
     </ng-template>
 
     <ng-template swiperSlide>
-      <img src="assets/img/ica-slidebox-img-4.png" class="slide-image" />
-      <h2 class="slide-title">Ready to Play?</h2>
+      <img src="assets/img/vamosComecar.png" class="slide-image" />
+      <h2 class="slide-title">Vamos começar</h2>
       <ion-button fill="clear" (click)="startApp()">
         Continue
         <ion-icon slot="end" name="arrow-forward"></ion-icon>

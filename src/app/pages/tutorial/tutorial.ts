@@ -24,8 +24,10 @@ export class TutorialPage {
 
   startApp() {
     this.router
-      .navigateByUrl('/app/tabs/schedule', { replaceUrl: true })
-      .then(() => this.storage.set('ion_did_tutorial', true));
+      /* .navigateByUrl('/app/tabs/schedule', { replaceUrl: true })
+      .then(() => this.storage.set('ion_did_tutorial', true)); */
+      .navigateByUrl('/login', { replaceUrl: true })
+     ; 
   }
 
   setSwiperInstance(swiper: Swiper) {

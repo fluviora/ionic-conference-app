@@ -21,31 +21,31 @@
   </div>
 
   <div class="about-info">
-    <h3 class="ion-padding-top ion-padding-start">About</h3>
+    <h3 class="ion-padding-top ion-padding-start">Quem somos?</h3>
 
     <p class="ion-padding-start ion-padding-end">
-      The Ionic Conference is a one-day conference on {{ conferenceDate | date: 'mediumDate' }} featuring talks from the Ionic team. It is focused on Ionic applications being built with Ionic Framework. This includes migrating apps to the latest version of the framework, Angular concepts, Webpack, Sass, and many other technologies used in Ionic 2. Tickets are completely sold out, and we’re expecting more than 1000 developers – making this the largest Ionic conference ever!
+      A Líbano Corretora de Seguros é um especializada em oferecer de seguros.
     </p>
 
-    <h3 class="ion-padding-top ion-padding-start">Details</h3>
+    <h3 class="ion-padding-top ion-padding-start">Detalhes</h3>
 
     <ion-list lines="none">
       <ion-item>
         <ion-label>
-          Location
+          Localização
         </ion-label>
         <ion-select [(ngModel)]="location" [interfaceOptions]="selectOptions">
-          <ion-select-option value="madison">Madison, WI</ion-select-option>
-          <ion-select-option value="austin">Austin, TX</ion-select-option>
-          <ion-select-option value="chicago">Chicago, IL</ion-select-option>
-          <ion-select-option value="seattle">Seattle, WA</ion-select-option>
+          <ion-select-option value="madison">Brasília, DF</ion-select-option>
+          <ion-select-option value="austin">Goiânia, GO</ion-select-option>
+          <ion-select-option value="chicago">São Paulo, SP</ion-select-option>
+          <ion-select-option value="seattle">Líbano, LB</ion-select-option>
         </ion-select>
       </ion-item>
       <ion-item button="true" id="open-date-input">
         <ion-label>
-          Date
+          Fundação
         </ion-label>
-        <ion-text slot="end">{{ conferenceDate | date: 'mediumDate' }}</ion-text>
+        <ion-text slot="end">12/10/2019</ion-text>
         <ion-popover id="date-input-popover" trigger="open-date-input" [showBackdrop]="false" side="top" alignment="end">
           <ng-template>
             <ion-datetime max="2056" [(ngModel)]="conferenceDate" presentation="date"></ion-datetime>
@@ -54,23 +54,23 @@
       </ion-item>
     </ion-list>
 
-    <h3 class="ion-padding-top ion-padding-start">Internet</h3>
+    <h3 class="ion-padding-top ion-padding-start">Contato e cotações</h3>
 
     <ion-list lines="none">
       <ion-item>
         <ion-label>
-          Wifi network
+          Flúvio Araujo +55 61 9 8206-4678
         </ion-label>
         <ion-label class="ion-text-end">
-          ica{{conferenceDate | date: 'y'}}
+          fluvio@libanoseguros.com.br
         </ion-label>
       </ion-item>
       <ion-item>
         <ion-label>
-          Password
+          Faça sua cotação 
         </ion-label>
         <ion-label class="ion-text-end">
-          makegoodthings
+          aggilizador.libanoseguros.com.br
         </ion-label>
       </ion-item>
     </ion-list>

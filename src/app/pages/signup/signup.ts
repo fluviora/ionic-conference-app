@@ -17,9 +17,11 @@ export class SignupPage {
   signup: UserOptions = { username: '', password: '' };
   submitted = false;
 
+ 
   constructor(
     public router: Router,
-    public userData: UserData
+    public userData: UserData,
+    
   ) {}
 
   onSignup(form: NgForm) {

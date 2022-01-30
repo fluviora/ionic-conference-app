@@ -6,19 +6,19 @@ import { PopoverController } from '@ionic/angular';
   template: `
     <ion-list>
       <ion-item button (click)="close('https://ionicframework.com/getting-started')">
-        <ion-label>Learn Ionic</ion-label>
+        <ion-label>Seguro de carro</ion-label>
       </ion-item>
       <ion-item button (click)="close('https://ionicframework.com/docs/')">
-        <ion-label>Documentation</ion-label>
+        <ion-label>Seguro de vida</ion-label>
       </ion-item>
       <ion-item button (click)="close('https://showcase.ionicframework.com')">
-        <ion-label>Showcase</ion-label>
+        <ion-label>Seguro residencial</ion-label>
       </ion-item>
       <ion-item button (click)="close('https://github.com/ionic-team/ionic')">
-        <ion-label>GitHub Repo</ion-label>
+        <ion-label>Seguro para sua empresa</ion-label>
       </ion-item>
       <ion-item button (click)="support()">
-        <ion-label>Support</ion-label>
+        <ion-label>Seguro viagem</ion-label>
       </ion-item>
     </ion-list>
   `
